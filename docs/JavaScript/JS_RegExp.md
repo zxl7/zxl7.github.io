@@ -114,7 +114,7 @@ var patten = /<([a-zA-Z]+)>(.*?)<\/\1>/
 
 ### 实例方法
 - exec	属性·input	·index
-```es6
+```TS
 var str = 'js js js'
 var pattern = /js/g;
 //全局匹配
@@ -127,7 +127,7 @@ console.log(patten.exec(str));
 - `valueOf`			返回正则本身
 
 ### 实例属性
-```es6
+```TS
 var str = 'js js js'
 var pattern = /js/g;
 ```
@@ -148,7 +148,7 @@ var pattern = /js/g;
 - `$1`		分组是构造函数的属性`$1`来引用
 
 ### String中与正则有关的方法
-```es6
+```TS
 var str = 'html js'
 var pattern = /js2/
 
@@ -160,7 +160,7 @@ console.log(str.search(pattern));
 - `·$·`			尾匹配和`^`首匹配		`match+m`	多行匹配；
 - `split`		替换结合正则`str.split(pattern)`		`pattern = /\s*,\s*/`
 - `replace`		替换`(str.replace('js','html'))`，可将字符串js直接替换为html；全局匹配就会全局替换
-```es6
+```TS
 var str = '111-111-111'
 var pattern = /-/g
 
@@ -184,7 +184,7 @@ console.log(str.replace(pattern,function ($0){
 - 密码		6-16位，区分大小写，不能用空白字符\s		`/^\S{6-16}$/`
 
 ### 去除字符串首位空白字符
-```es6
+```TS
 var str = '		Alex	';
 var pattern = /^\s+|\s+$/
 // var pattern1 = /^\s+/
@@ -194,7 +194,7 @@ console.log('|'+str.replace(pattern,'')+'|')
 ```
 
 可以修改为：
-```es6
+```TS
 function trim(str) {
 	return str.replace(/^\s+/,'').replace(/\s+$/,'')
 }
@@ -203,7 +203,7 @@ trim(str)
 ```
 
 ### 转驼峰-
-```es6
+```TS
 var str = background-color;
 var pattern = /-([a-z])/gi;
 console.log(str.replace(pattern,function (all,letter) {
@@ -216,7 +216,7 @@ function toCameCase(str) {
 ```
 
 ### 匹配HTML标签
-```es6
+```TS
 //正向思考
 var str = '<p class = "odd" id = "odd"> 123 </p>'
 var pattern = /<\/?[a-zA-Z]+(\s+[a-zA-Z]+=".*")>/g
@@ -231,13 +231,13 @@ var pattern = /<(?:[^"'>]|([^"'])|'[^"']*'\1)*>/g
 ```
 
 ### 邮箱
-```es6
+```TS
 /(\w+\.)*(\w+)@(\w+\.)+([a-z])/i;
 /(?:\w+\.)*\w+@(?:\w+\.)+[a-z]/i;
 ```
 
 ### URL地址
-```es6
+```TS
 // 协议:\/\/主机名(:端口号)/(路径))
 
 // 简化版
@@ -245,7 +245,7 @@ var pattern = /^(https?:\/\/)?([^:\/]+)(:\d+)?(\/.*)?$/
 ```
 
 ### 汇总
-```es6
+```TS
 var regexp = {
 	'chinese': /[\u4e00-\u9fa5]/,
 	'qq':/^[1-9]\d{4,}$/
