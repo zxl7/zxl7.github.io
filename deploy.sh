@@ -6,9 +6,9 @@ npm run build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 # 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
+echo 'syzxl.top' > CNAME
 git init
 git add -A
 git commit -m 'deploy'
-git push -f https://github.com/Xanadu-zxl/Xanadu-zxl.github.io main:gh-pages
+git push -f https://github.com/Xanadu-zxl/Xanadu-zxl.github.io master:gh-pages
 cd -
