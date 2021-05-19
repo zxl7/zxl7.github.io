@@ -1014,7 +1014,7 @@ console.log(greeting()); // Hello Anonymous
 
 ### rest
 - 在rest操作符的帮助下，你可以创建有一个变量来接受多个参数的函数。这些参数被储存在一个可以在函数内部读取的数组中。
-``` es6
+``` TS
 const arr = [6, 89, 3, 45];
 const maximus = Math.max.apply(null, arr); // 返回 89
 
@@ -1086,7 +1086,7 @@ foo(1);
 - 如果传入的参数连正常定义的参数都没填满，也不要紧，rest参数会接收一个空数组（注意不是undefined）。
 
 - 因为rest参数是ES6新标准，所以你需要测试一下浏览器是否支持。请用rest参数编写一个sum()函数，接收任意个参数并返回它们的和：
-``` es6
+``` TS
 'use strict';
 function sum(...rest) {
    let result = 0;
