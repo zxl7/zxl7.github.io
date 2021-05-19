@@ -14,6 +14,7 @@ module.exports = {
       { text: '主页', link: '/' },
       { text: 'CSS', link: '/CSS/' },
       { text: 'JS', link: '/JavaScript/' },
+      { text: 'Vue', link: '/Vue/' },
       { text: 'GitHub', link: 'https://github.com/Xanadu-zxl' },
       { text: '掘金', link: 'https://juejin.im/user/5b1228ccf265da6e0b6ff25e' },
     ],
@@ -22,35 +23,40 @@ module.exports = {
     },
     sidebar: [
       {
-        title: 'HTML ✨',
-        children: [['HTML/HTML.md', '再学HTML']],
+        title: 'HTML',
+        path: '/HTML/',
+        children: [['HTML/HTML.md', 'HTML']],
       },
-
       {
-        title: 'CSS ⌨️',
+        title: 'CSS',
+        path: '/CSS/',
         children: [
           ['CSS/css.md', 'CSS基础'],
-          ['CSS/cssWorld.md', 'CSS世界'],
-          ['CSS/Less.md', 'Less'],
+          ['CSS/cssWorld.md', 'CSS进阶'],
+          ['CSS/Less.md', 'Less 预处理语言'],
         ],
       },
       {
-        title: 'JS 💻', // 一级菜单名称
+        title: 'JavaScript', // 一级菜单名称
         path: '/JavaScript/',
         sidebarDepth: 2, //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
         children: [
-          //菜单名称为'Ajax-Json'，跳转至/pages/JavaScript/Ajax-Json.md
-          ['JavaScript/ES6.md', '🍦 ES6'],
-          ['JavaScript/JavaScript.md', '🍦 JS基础丶'],
-          ['JavaScript/Jquery.md', '🍦 Jquery'],
-          ['JavaScript/JS_Advance.md', '🍦 JS进阶'],
-          ['JavaScript/JS_Design_Mode.md', '🍦 JS设计模式'],
-          ['JavaScript/JS_Object.md', '🍦 JS面向对象'],
-          ['JavaScript/JS_RegExp.md', '🍦 JS正则'],
+          ['JavaScript/ES6.md', 'ES6'],
+          ['JavaScript/Jquery.md', 'Jquery'],
+          ['JavaScript/JavaScript.md', 'JS基础'],
+          ['JavaScript/JS_Advance.md', 'JS进阶'],
+          ['JavaScript/JS_RegExp.md', 'JS正则'],
+          ['JavaScript/JS_Object.md', 'JS面向对象'],
+          ['JavaScript/JS_Design_Mode.md', 'JS设计模式'],
         ],
       },
       {
-        title: '其他 🔧',
+        title: 'Vue',
+        path: '/Vue/',
+        children: [['Vue/Vue.md', 'Vue']],
+      },
+      {
+        title: '其他',
         children: [['other/cache.md', '从输入URL到展现涉及哪些缓存环节']],
       },
     ],
