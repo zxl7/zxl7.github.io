@@ -13,5 +13,5 @@ cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f https://github.com/Xanadu-zxl/Xanadu-zxl.github.io master:gh-pages
+git push -f https://github.com/zxl7/zxl7.github.io master:gh-pages
 cd -
