@@ -7,9 +7,9 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@': './public'
-      }
-    }
+        '@': './public',
+      },
+    },
   },
   markdown: {
     lineNumbers: true,
@@ -22,13 +22,18 @@ module.exports = {
       { text: 'CSS', link: '/CSS/' },
       { text: 'JS', link: '/JavaScript/' },
       { text: 'Vue', link: '/Vue/' },
-      { text: 'GitHub', link: 'https://github.com/Xanadu-zxl' },
+      { text: 'GitHub', link: 'https://github.com/zxl7' },
       { text: '掘金', link: 'https://juejin.im/user/5b1228ccf265da6e0b6ff25e' },
     ],
     themeConfig: {
       displayAllHeaders: true, // 默认值：false
     },
     sidebar: [
+      {
+        title: 'Weekly',
+        path: '/weekly/',
+        children: [['weekly/1.md', '学习计划 🌋']],
+      },
       {
         title: 'HTML',
         path: '/HTML/',
@@ -48,6 +53,7 @@ module.exports = {
         path: '/JavaScript/',
         sidebarDepth: 2, //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
         children: [
+          ['JavaScript/Ajax.md', 'Ajax'],
           ['JavaScript/ES6.md', 'ES6'],
           ['JavaScript/Jquery.md', 'Jquery'],
           ['JavaScript/JavaScript.md', 'JS基础'],
@@ -63,7 +69,7 @@ module.exports = {
         children: [['Vue/Vue.md', 'Vue']],
       },
       {
-        title: '其他',
+        title: 'Interview',
         children: [['other/cache.md', '从输入URL到展现涉及哪些缓存环节']],
       },
     ],
