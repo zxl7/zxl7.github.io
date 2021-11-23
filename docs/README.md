@@ -2,9 +2,13 @@
 home: true
 heroImage: /logo.jpg
 actionText: 🌋
-actionLink: /CSS/
+actionLink: HTML/HTML.md
 features:
-- title: 📟
-  details: Good Good Study、Day Day Up
-footer: 在更大的世界、做更好的自己
+- title: 📟 📟 📟
+  details: 123
+- title: 📟 📟 📟
+  details: 123
+- title: 📟 📟 📟
+  details: 123
+footer: 真正的大师, 永远有一颗学徒的心
 ---

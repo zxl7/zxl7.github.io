@@ -1,4 +1,5 @@
 var sidebar = require('./directory')
+var nav = require('./nav')
 
 module.exports = {
   title: '郑天霸的技术博客丨🥩',
@@ -19,14 +20,7 @@ module.exports = {
   themeConfig: {
     sidebarDepth: 2,
     lastUpdated: 'Last Updated',
-    nav: [
-      { text: '主页', link: '/' },
-      { text: 'CSS', link: '/CSS/' },
-      { text: 'JS', link: '/JavaScript/' },
-      { text: 'Vue', link: '/Vue/' },
-      { text: 'GitHub', link: 'https://github.com/zxl7' },
-      { text: '掘金', link: 'https://juejin.cn/user/3624450346452542' },
-    ],
+    nav: nav,
     themeConfig: {
       displayAllHeaders: true, // 默认值：false
     },
