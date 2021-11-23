@@ -8,9 +8,9 @@ module.exports = [
     title: 'CSS',
     path: '/CSS/',
     children: [
-      ['CSS/css.md', 'CSS基础'],
-      ['CSS/cssWorld.md', 'CSS进阶'],
-      ['CSS/Less.md', 'Less 预处理语言'],
+      ['CSS/css.md', 'CSS 基础'],
+      ['CSS/world.md', 'CSS 进阶'],
+      ['CSS/Less.md', 'Less'],
     ],
   },
   {
@@ -18,14 +18,13 @@ module.exports = [
     path: '/JavaScript/',
     sidebarDepth: 2, //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
     children: [
-      ['JavaScript/Ajax.md', 'Ajax'],
       ['JavaScript/ES6.md', 'ES6'],
       ['JavaScript/Jquery.md', 'Jquery'],
-      ['JavaScript/JavaScript.md', 'JS基础'],
-      ['JavaScript/JS_Advance.md', 'JS进阶'],
-      ['JavaScript/JS_RegExp.md', 'JS正则'],
-      ['JavaScript/JS_Object.md', 'JS面向对象'],
-      ['JavaScript/JS_Design_Mode.md', 'JS设计模式'],
+      ['JavaScript/JavaScript.md', 'JS 基础'],
+      ['JavaScript/Advance.md', 'JS 进阶'],
+      ['JavaScript/RegExp.md', 'JS 正则'],
+      ['JavaScript/Object.md', 'JS 面向对象'],
+      ['JavaScript/DesignPatterns.md', 'JS 设计模式'],
     ],
   },
   {
@@ -35,11 +34,11 @@ module.exports = [
   },
   {
     title: 'Weekly',
-    path: '/weekly/',
-    children: [['weekly/1.md', '学习计划 🌋']],
+    path: '/Weekly/',
+    children: [['Weekly/1.md', '学习计划 🌋']],
   },
   {
     title: 'Interview',
-    children: [['other/cache.md', '从输入URL到展现涉及哪些缓存环节']],
+    children: [['Interview/Cache.md', '从输入URL到展现涉及哪些缓存环节']],
   },
 ]

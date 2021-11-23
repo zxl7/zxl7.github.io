@@ -13,7 +13,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
-# echo 'syzxl.top' > CNAME
+echo 'syzxl.top' > CNAME
 git init
 git add -A
 git commit -m '自动更新博客文章~'

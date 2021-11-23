@@ -1,4 +1,4 @@
-var sidebar = require('./directory')
+var sidebar = require('./sidebar')
 var nav = require('./nav')
 
 module.exports = {
