@@ -8,8 +8,6 @@
  4. BFC子元素的任何排版不影响
  5. 触发BFC：绝对,相对定位`display:table;`
  6. 触发BFC：只要不是`overflow:visible;`
-## 闭合浮动
- <img src="1.jpg" alt="">
 
 ## 定位
 
@@ -35,7 +33,7 @@
 - background-position:x,y;
 - 对齐方式:display:inline-block;
 - 浮动 默认为块级元素 然后定位(不推荐)
-## CSS内容移除某区域
+## CSS内容移出某区域
 常用于logo优化：
 - 利用text-indent:-2000em;(首行缩进)
 - 利用padding挤开盒子并且overflow切割;

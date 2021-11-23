@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /logo.jpg
-actionText: 芝麻开门 →
+actionText: 🌋
 actionLink: /CSS/
 features:
 - title: 📟

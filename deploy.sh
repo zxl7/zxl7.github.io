@@ -17,6 +17,6 @@ cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m '自动更新博客文章~'
-git push -f https://github.com/zxl7/zxl7.github.io master:gh-pages
+git push -f git@github.com:zxl7/zxl7.github.io.git master:gh-pages
 cd -
 
