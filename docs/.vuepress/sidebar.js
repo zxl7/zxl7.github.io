@@ -39,6 +39,7 @@ module.exports = [
   },
   {
     title: 'Interview',
+    path: '/Interview/',
     children: [['Interview/Cache.md', '从输入URL到展现涉及哪些缓存环节']],
   },
 ]
