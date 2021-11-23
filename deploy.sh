@@ -12,8 +12,8 @@ npm run build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-# 如果是发布到自定义域名
 echo 'syzxl.top' > CNAME
+# 如果是发布到自定义域名
 git init
 git add -A
 git commit -m '自动更新博客文章~'
