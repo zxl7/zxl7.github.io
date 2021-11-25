@@ -25,6 +25,7 @@ module.exports = [
       ['JavaScript/RegExp.md', 'JS 正则'],
       ['JavaScript/Object.md', 'JS 面向对象'],
       ['JavaScript/DesignPatterns.md', 'JS 设计模式'],
+      ['JavaScript/TypeScript.md', 'TypeScript'],
     ],
   },
   {
