@@ -31,7 +31,7 @@ module.exports = [
   {
     title: 'Vue',
     path: '/Vue/',
-    children: [['Vue/Vue.md', 'Vue']],
+    children: [['Vue/Vue3.md', 'Vue']],
   },
   {
     title: 'Weekly',

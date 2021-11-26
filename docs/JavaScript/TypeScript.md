@@ -36,13 +36,12 @@ function withAPI<T>(url:string):Promise<T> {
 withAPI<Aaa>('country.resp')
 ```
 
-## 交叉联合类型
+## 交叉,联合类型
 - &
 - |
 
 ## 类型断言
 - as
-
 
 ## Partial
 - 接受泛型,传入类型都变成可选
