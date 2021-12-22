@@ -1,5 +1,9 @@
 module.exports = [
   {
+    title: '规范',
+    path: '/Rules/',
+  },
+  {
     title: 'HTML',
     path: '/HTML/',
     children: [['HTML/HTML.md', 'HTML']],
@@ -29,9 +33,9 @@ module.exports = [
     ],
   },
   {
-    title: 'Vue',
-    path: '/Vue/',
-    children: [['Vue/Vue3.md', 'Vue']],
+    title: '框架相关',
+    path: '/Framework/',
+    children: [['Framework/Vue3.md', 'Vue3']],
   },
   {
     title: 'Weekly',
