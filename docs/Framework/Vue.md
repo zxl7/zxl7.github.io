@@ -1,6 +1,4 @@
-## 源码实现
-### 自定义事件
+# Vue3 源码解析
 
-<!-- ![asd](./aaa.png) -->
-
-<!-- ![An image](./image.png) -->
+## 组件渲染：vnode 到 DOM
+- 创建vnode ——> 渲染vnode——> 生成DOM
