@@ -5,7 +5,8 @@
     "d": "bash deploy.sh"
   },
   "devDependencies": {
-    "vuepress": "^1.7.1"
+    "vuepress": "^1.7.1",
+    "vuepress-theme-reco": "^1.6.10"
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001259"

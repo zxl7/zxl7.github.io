@@ -4,6 +4,12 @@ var nav = require('./nav')
 module.exports = {
   title: '郑天霸的技术博客丨🥩',
   description: '温故而知新丶',
+  theme: 'reco',
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },  // 时间格式
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
