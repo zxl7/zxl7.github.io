@@ -19,7 +19,7 @@ function proxyData(data) {
       enumerable: true,
       configurable: true,
       get () {
-        console.log('get: ', key, data[key])
+        console.log('get: ', key, data[key]) 
         return data[key]
       },
       set (newValue) {
