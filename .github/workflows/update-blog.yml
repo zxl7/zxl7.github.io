@@ -17,6 +17,7 @@ jobs:
       - name: build
         run: |
           git clone https://github.com/zxl7/zxl7.github.io.git
+          ls -a
           cd zxl7.github.io/docs/.vuepress/dist
           echo 'zxl7.top' > CNAME
           # 如果是发布到自定义域名
