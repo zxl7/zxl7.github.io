@@ -5,6 +5,7 @@
     "d": "bash deploy.sh"
   },
   "devDependencies": {
+    "vue": "^2.7.2",
     "vuepress": "^1.7.1",
     "vuepress-theme-reco": "^1.6.10"
   },
