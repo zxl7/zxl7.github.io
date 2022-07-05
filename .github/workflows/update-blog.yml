@@ -14,7 +14,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
             node-version: 14
-      - uses: |
+      - name: build
+      - run: |
           npm run build
           # 进入生成的文件夹
           cd docs/.vuepress/dist
