@@ -293,7 +293,7 @@ person<span class="token punctuation">.</span><span class="token function">setSe
 <li>匿名函数的调用
 <ul>
 <li>立即执行函数
-<img src="JS_advance/1.jpg"></li>
+<img src="@source/JavaScript/JS_advance/1.jpg"></li>
 </ul>
 </li>
 </ul>
@@ -303,7 +303,7 @@ person<span class="token punctuation">.</span><span class="token function">setSe
 <li>不合法标识,可以用[]调用</li>
 <li><code v-pre>console.log(oper['@'](1,2)</code></li>
 <li>链式调用
-<img src="JS_advance/3.jpg"></li>
+<img src="@source/JavaScript/JS_advance/3.jpg"></li>
 </ul>
 <h4 id="构造函数的调用" tabindex="-1"><a class="header-anchor" href="#构造函数的调用" aria-hidden="true">#</a> 构造函数的调用</h4>
 <ul>

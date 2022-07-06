@@ -272,14 +272,14 @@ person.setSex()
 - if/else调用
 - 匿名函数的调用
 	- 立即执行函数
-<img src="JS_advance/1.jpg">
+<img src="./JS_advance/1.jpg">
 
 #### 方法的调用
 - 递归调用
 - 不合法标识,可以用[]调用
 - `console.log(oper['@'](1,2)`
 - 链式调用
-<img src="JS_advance/3.jpg">
+<img src="./JS_advance/3.jpg">
 
 #### 构造函数的调用
 - 构造函数一定要:new person()返回一个对象
