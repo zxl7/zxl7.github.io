@@ -22,6 +22,6 @@ jobs:
           git init
           git config --global user.email "zxlcoder@gmail.com"
           git config --global user.name "zxl7"
-          git add .
-          git commit -m '自动更新博客文章!'
-          git push -f https://github.com/zxl7/zxl7.github.io.git main:gh-pages
+          # git add .
+          # git commit -m '自动更新博客文章!'
+          # git push -f https://github.com/zxl7/zxl7.github.io.git main:gh-pages
