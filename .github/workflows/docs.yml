@@ -73,8 +73,6 @@ jobs:
           yarn build
           cd docs/.vuepress/dist
           echo 'zxl7.top' > CNAME
-          ls -a
-
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages

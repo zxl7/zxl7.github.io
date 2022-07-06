@@ -25,11 +25,11 @@ import {
   unref,
   watch,
   watchEffect
-} from "./chunk-TGKDZ6CK.js";
-import "./chunk-AKDJT4VK.js";
+} from "./chunk-ZT2TARZU.js";
+import "./chunk-VNKCJBW6.js";
 import "./chunk-FEFTYQ2P.js";
 
-// node_modules/_vue-demi@0.13.2@vue-demi/lib/index.mjs
+// node_modules/vue-demi/lib/index.mjs
 var isVue2 = false;
 var isVue3 = true;
 function set(target, key, val) {
@@ -49,7 +49,7 @@ function del(target, key) {
   delete target[key];
 }
 
-// node_modules/_@vueuse_shared@8.7.5@@vueuse/shared/index.mjs
+// node_modules/@vuepress/theme-default/node_modules/@vueuse/shared/index.mjs
 var __defProp$8 = Object.defineProperty;
 var __defProps$5 = Object.defineProperties;
 var __getOwnPropDescs$5 = Object.getOwnPropertyDescriptors;
@@ -1330,7 +1330,7 @@ function whenever(source, cb, options) {
   }, options);
 }
 
-// node_modules/_@vueuse_core@8.7.5@@vueuse/core/index.mjs
+// node_modules/@vuepress/theme-default/node_modules/@vueuse/core/index.mjs
 function computedAsync(evaluationCallback, initialState, optionsOrRef) {
   let options;
   if (isRef(optionsOrRef)) {

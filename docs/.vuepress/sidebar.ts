@@ -2,10 +2,12 @@ module.exports = [
   {
     text: '规范',
     link: '/Rules/',
+    collapsible: true,
   },
   {
     text: 'HTML',
     link: '/HTML/HTML.md',
+    collapsible: true,
   },
   {
     text: 'CSS',
@@ -18,10 +20,9 @@ module.exports = [
     ],
   },
   {
-    text: 'JavaScript', // 一级菜单名称
+    text: 'JavaScript',
     link: '/JavaScript/ES6.md',
-    sidebarDepth: 2, //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
-    collapsible: true,
+    collapsable: true,
     children: [
       { link: '/JavaScript/ES6.md', text: 'ES6' },
       { link: '/JavaScript/Jquery.md', text: 'Jquery' },

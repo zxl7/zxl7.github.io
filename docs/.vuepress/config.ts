@@ -1,9 +1,13 @@
 var sidebar = require('./sidebar')
 var nav = require('./nav')
 
+
+import { hopeTheme } from "vuepress-theme-hope";
+
 const { defaultTheme } = require('@vuepress/theme-default')
 module.exports = {
-    title: '郑天天的技术博客丨',
+    title: 'zxl的技术博客丨',
+    frontmatter: true,
     description: '🔥',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
@@ -21,7 +25,12 @@ module.exports = {
     theme: defaultTheme({
         // 默认主题配置
         navbar: nav,
-        displayAllHeaders: true, // 默认值：false
         sidebar: sidebar,
+        // plugins: {
+        //     comment: {
+        //         type: "waline",
+        //         serverURL: "...", // your serverURL
+        //     },
+        // },
     })
 }
