@@ -362,7 +362,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
 <li>对象做参数:
-<img src = "JS_advance/2.png"></li>
+<img src = "./JS_advance/2.png"></li>
 <li>函数做参数:回调函数....</li>
 </ul>
 <h3 id="函数的返回值" tabindex="-1"><a class="header-anchor" href="#函数的返回值" aria-hidden="true">#</a> 函数的返回值</h3>

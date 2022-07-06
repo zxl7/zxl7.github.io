@@ -334,7 +334,7 @@ $.each([1,2,3],function(index,item)) {
 }
 ```
 - 对象做参数:
-<img src = "JS_advance/2.png">
+<img src = "./JS_advance/2.png">
 - 函数做参数:回调函数....
 
 ### 函数的返回值
