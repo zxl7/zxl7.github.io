@@ -8,15 +8,15 @@
 <li>lifeCycle</li>
 </ul>
 <h2 id="proxy-检测值的变化" tabindex="-1"><a class="header-anchor" href="#proxy-检测值的变化" aria-hidden="true">#</a> Proxy 检测值的变化</h2>
-<img src="@source/Framework/img/proxy.png">
+<!-- <img src="@source/Framework/img/proxy.png"> -->
 <h2 id="watcheffect" tabindex="-1"><a class="header-anchor" href="#watcheffect" aria-hidden="true">#</a> watchEffect</h2>
 <ul>
 <li>自动收集依赖并触发</li>
 <li>自动/手动销毁 effect</li>
 <li>使副作用失效</li>
-<li>副作用执行顺序可控制
-<img src="@source/Framework/img/watchEffect.png"></li>
+<li>副作用执行顺序可控制</li>
 </ul>
+<!-- <img src="@source/Framework/img/watchEffect.png"> -->
 <h2 id="watch" tabindex="-1"><a class="header-anchor" href="#watch" aria-hidden="true">#</a> watch</h2>
 <ul>
 <li>recative a single value</li>

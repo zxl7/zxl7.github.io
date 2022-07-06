@@ -38,13 +38,13 @@
 <li>需要替换掉原来的节点；</li>
 <li>移动、删除、新增子节点；</li>
 <li>修改了节点的属性；</li>
-<li>对于文本节点的文本内容改变。
-<img src="@source/Framework/img/react.png"></li>
+<li>对于文本节点的文本内容改变。</li>
 </ul>
 </li>
 </ul>
 </li>
 </ol>
+<!-- <img src="@source/Framework/img/react.png"> -->
 <p>如图所示，我们对比了两棵基于<code v-pre>&lt;div&gt;</code>元素的DOM 树，得到的差异有：</p>
 <ul>
 <li>p 元素插入了一个 span 元素子节点；</li>

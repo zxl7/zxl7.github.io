@@ -1543,7 +1543,7 @@ Cookie是由服务器发送的key-value标示符。因为HTTP协议是无状态�
 - 所以`document.getElementById()`可以直接定位唯一的一个DOM节点。
 - document.getElementsByTagName()和document.getElementsByClassName()总是返回一组DOM节点。
 - 要精确地选择DOM，可以先定位父节点，再从父节点开始选择，以缩小范围。
-<img src = "/JS/4.png">
+<!-- <img src = "/JS/4.png"> -->
 
 ``` js
 var test = document.getElementById('test');// 返回ID为'test'的节点
@@ -1661,7 +1661,7 @@ var attr = document.createAttribute('data-title');
 attr.value = 'ddd'
 div.attributes.setNamedItem(attr)
 ```
-<img src = "/JavaScript/2.png">
+<!-- <img src = "/JavaScript/2.png"> -->
 
 
 
@@ -2089,7 +2089,7 @@ console.log(navigator.userAgent);
 - 事件句柄
 
 ### 事件流
-<img src = "/JS/3.jpg">
+<!-- <img src = "/JS/3.jpg"> -->
 - 事件冒泡 子-->父(文档) 最具体到不具体
 - 事件捕获 父-->子 不具体到具体
 
@@ -2131,7 +2131,7 @@ btn.onclick = null; //删除onclick属性
 6. 不需要 + 'on'
 7. 可添加多个顺序触发
 8. 优点: 松耦合,绑定多个事件,事件捕获和冒泡
-<img src = "/JS/1.jpg">
+<!-- <img src = "/JS/1.jpg"> -->
 
 ### IE事件处理程序
 - 默认事件冒泡

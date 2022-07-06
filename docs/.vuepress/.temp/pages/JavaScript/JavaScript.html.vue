@@ -1480,9 +1480,9 @@ Cookie是由服务器发送的key-value标示符。因为HTTP协议是无状态�
 <li>由于ID在HTML文档中是唯一的</li>
 <li>所以<code v-pre>document.getElementById()</code>可以直接定位唯一的一个DOM节点。</li>
 <li>document.getElementsByTagName()和document.getElementsByClassName()总是返回一组DOM节点。</li>
-<li>要精确地选择DOM，可以先定位父节点，再从父节点开始选择，以缩小范围。
-<img src = "/JS/4.png"></li>
+<li>要精确地选择DOM，可以先定位父节点，再从父节点开始选择，以缩小范围。</li>
 </ul>
+<!-- <img src = "/JS/4.png"> -->
 <div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">var</span> test <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 返回ID为'test'的节点</span>
 <span class="token keyword">var</span> trs <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'test-table'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'tr'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">// 先定位ID为'test-table'的节点，再返回其内部所有tr节点</span>
@@ -1593,7 +1593,7 @@ name设置的样式名称<span class="token punctuation">,</span>Value设置的�
 <div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>var attr = document.createAttribute('data-title');
 attr.value = 'ddd'
 div.attributes.setNamedItem(attr)
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><img src = "/JavaScript/2.png">
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><!-- <img src = "/JavaScript/2.png"> -->
 <h3 id="操作属性" tabindex="-1"><a class="header-anchor" href="#操作属性" aria-hidden="true">#</a> 操作属性</h3>
 <ul>
 <li>对于自带属性<code v-pre>标签.属性</code>可以取得属性,<code v-pre>标签.class</code>除外</li>
@@ -1971,9 +1971,11 @@ window<span class="token punctuation">.</span>screen<span class="token punctuati
 <li>事件句柄</li>
 </ul>
 <h3 id="事件流" tabindex="-1"><a class="header-anchor" href="#事件流" aria-hidden="true">#</a> 事件流</h3>
-<img src = "/JS/3.jpg">
-- 事件冒泡 子-->父(文档) 最具体到不具体
-- 事件捕获 父-->子 不具体到具体
+<!-- <img src = "/JS/3.jpg"> -->
+<ul>
+<li>事件冒泡 子--&gt;父(文档) 最具体到不具体</li>
+<li>事件捕获 父--&gt;子 不具体到具体</li>
+</ul>
 <h3 id="事件委托" tabindex="-1"><a class="header-anchor" href="#事件委托" aria-hidden="true">#</a> 事件委托</h3>
 <ul>
 <li>事件委托就是利用冒泡的原理，把事件加到父级上，触发执行效果</li>
@@ -2014,9 +2016,9 @@ btn.onclick = null; //删除onclick属性
 <li><code v-pre>btn2.removeEventListener('click',dom2)</code> 解绑成功主要原因:保持函数里参数一致</li>
 <li>不需要 + 'on'</li>
 <li>可添加多个顺序触发</li>
-<li>优点: 松耦合,绑定多个事件,事件捕获和冒泡
-<img src = "/JS/1.jpg"></li>
+<li>优点: 松耦合,绑定多个事件,事件捕获和冒泡</li>
 </ol>
+<!-- <img src = "/JS/1.jpg"> -->
 <h3 id="ie事件处理程序" tabindex="-1"><a class="header-anchor" href="#ie事件处理程序" aria-hidden="true">#</a> IE事件处理程序</h3>
 <ul>
 <li>默认事件冒泡</li>
