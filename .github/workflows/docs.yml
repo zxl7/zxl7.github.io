@@ -71,6 +71,8 @@ jobs:
       - name: Build VuePress site
         run: |
           yarn build
+          cd docs/.vuepress/dist
+          echo 'zxl7.top' > CNAME
           ls -a
 
 
