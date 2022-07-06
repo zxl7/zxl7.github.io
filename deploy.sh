@@ -6,7 +6,7 @@ git add .
 git commit -m '更新博客 '
 git push
 
-生成静态文件
+# 生成静态文件
 npm run build
 
 # 进入生成的文件夹
