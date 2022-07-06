@@ -1,45 +1,45 @@
 module.exports = [
   {
     text: '规范',
-    link: '/Rules/',
+    link: '/rules/',
     collapsible: true,
   },
   {
     text: 'HTML',
-    link: '/HTML/HTML.md',
+    link: '/html/html.md',
     collapsible: true,
   },
   {
     text: 'CSS',
-    link: '/CSS/css.md',
+    link: '/css/css.md',
     collapsible: true,
     children: [
-      { link: '/CSS/css.md', text: 'CSS 基础' },
-      { link: '/CSS/cssSenior.md', text: 'CSS 进阶' },
-      { link: '/CSS/Less.md', text: 'Less' },
+      { link: '/css/css.md', text: 'CSS 基础' },
+      { link: '/css/cssSenior.md', text: 'CSS 进阶' },
+      { link: '/css/Less.md', text: 'Less' },
     ],
   },
   {
     text: 'JavaScript',
-    link: '/JavaScript/ES6.md',
+    link: '/javaScript/es6.md',
     collapsable: true,
     children: [
-      { link: '/JavaScript/ES6.md', text: 'ES6' },
-      { link: '/JavaScript/Jquery.md', text: 'Jquery' },
-      { link: '/JavaScript/JavaScript.md', text: 'JS 基础' },
-      { link: '/JavaScript/Advance.md', text: 'JS 进阶' },
-      { link: '/JavaScript/RegExp.md', text: 'JS 正则' },
-      { link: '/JavaScript/Object.md', text: 'JS 面向对象' },
-      { link: '/JavaScript/DesignPatterns.md', text: 'JS 设计模式' },
-      { link: '/JavaScript/TypeScript.md', text: 'TypeScript' },
+      { link: '/javaScript/es6.md', text: 'ES6' },
+      { link: '/javaScript/jQuery.md', text: 'Jquery' },
+      { link: '/javaScript/javaScript.md', text: 'JS 基础' },
+      { link: '/javaScript/advance.md', text: 'JS 进阶' },
+      { link: '/javaScript/regExp.md', text: 'JS 正则' },
+      { link: '/javaScript/object.md', text: 'JS 面向对象' },
+      { link: '/javaScript/designPatterns.md', text: 'JS 设计模式' },
+      { link: '/javaScript/typeScript.md', text: 'TypeScript' },
     ],
   },
   {
     text: '框架相关',
-    link: '/Framework/',
+    link: '/framework/',
     collapsible: true,
     children: [
-      { link: '/Framework/Vue3.md', text: 'Vue3' }
+      { link: '/framework/Vue3.md', text: 'Vue3' }
     ],
   },
 ]

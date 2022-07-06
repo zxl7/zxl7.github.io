@@ -292,7 +292,7 @@ person<span class="token punctuation">.</span><span class="token function">setSe
 <li>if/else 调用</li>
 <li>匿名函数的调用 - 立即执行函数</li>
 </ul>
-<!-- <img src="@source/JavaScript/JS_advance/1.jpg"> -->
+<!-- <img src="@source/javaScript/JS_advance/1.jpg"> -->
 <h4 id="方法的调用" tabindex="-1"><a class="header-anchor" href="#方法的调用" aria-hidden="true">#</a> 方法的调用</h4>
 <ul>
 <li>递归调用</li>
@@ -300,7 +300,7 @@ person<span class="token punctuation">.</span><span class="token function">setSe
 <li><code v-pre>console.log(oper['@'](1,2)</code></li>
 <li>链式调用</li>
 </ul>
-<!-- <img src="@source/JavaScript/JS_advance/3.jpg"> -->
+<!-- <img src="@source/javaScript/JS_advance/3.jpg"> -->
 <h4 id="构造函数的调用" tabindex="-1"><a class="header-anchor" href="#构造函数的调用" aria-hidden="true">#</a> 构造函数的调用</h4>
 <ul>
 <li>构造函数一定要:new person()返回一个对象</li>
