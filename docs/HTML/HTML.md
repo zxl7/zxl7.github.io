@@ -12,5 +12,3 @@
   3. 火狐（Firefox）内核 Gecko
   4. Safari内核 WebKit
   5. 欧朋（Opera）内核 Presto
-
-test
