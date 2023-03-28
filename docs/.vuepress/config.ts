@@ -6,7 +6,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 const { defaultTheme } = require('@vuepress/theme-default')
 module.exports = {
-    title: 'zxl的技术博客丨',
+    title: '逆水行舟丨',
     frontmatter: true,
     description: '🔥',
     head: [
