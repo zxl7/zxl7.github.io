@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.jpg
 actionText: 进入博客 🤩
-actionLink: link: /main/
+actionLink: /main/
 features:
 #   - title: 📟
 #     details: '输入'
