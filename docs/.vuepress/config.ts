@@ -8,7 +8,7 @@ const { defaultTheme } = require('@vuepress/theme-default')
 module.exports = {
     title: '逆水行舟丨',
     frontmatter: true,
-    description: '🔥',
+    description: '进入博客 🔥',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
     ],
