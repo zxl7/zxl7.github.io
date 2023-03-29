@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1d06f0d8","path":"/mian/VueRouter%E8%B7%AF%E7%94%B1.html","title":"","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1679998114000,"contributors":[{"name":"\u90D1\u859B\u6797","email":"zhengxuelin@yhbj.cn","commits":1}]},"filePathRelative":"mian/VueRouter\u8DEF\u7531.md"}');export{e as data};

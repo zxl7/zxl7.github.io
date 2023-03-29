@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o,a as _}from"./app.38db9df0.js";const r={},c=_("p",null,"VueRouter\u8DEF\u7531.md",-1),s=[c];function a(n,u){return t(),o("div",null,s)}var d=e(r,[["render",a],["__file","VueRouter\u8DEF\u7531.html.vue"]]);export{d as default};

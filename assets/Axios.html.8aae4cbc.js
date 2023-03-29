@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f27ae2e8","path":"/JavaScript/Axios.html","title":"","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1644202152000,"contributors":[{"name":"\u90D1\u859B\u6797","email":"zxlcoder@gmail.com","commits":1}]},"filePathRelative":"JavaScript/Axios.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-d300ec3a","path":"/HTML/HTML.html","title":"","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1658416234000,"contributors":[{"name":"zxl7","email":"zxlcoder@gamil.com","commits":3},{"name":"xanadu-zxl","email":"xanadu.zxl@gamil.com","commits":1}]},"filePathRelative":"HTML/HTML.md"}');export{a as data};
