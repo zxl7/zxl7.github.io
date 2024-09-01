@@ -37,8 +37,9 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
-          npm run docs:build
+          npm run build
           > blog/.vuepress/dist/.nojekyll
+          echo 'zxl7.top' > CNAME
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
