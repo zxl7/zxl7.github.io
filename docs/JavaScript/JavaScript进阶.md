@@ -5,7 +5,8 @@ ems: JavaScript
 categories: [学习笔记, JavaScript]
 ---
 
-JavaScript 进阶笔记丶
+JavaScript学习笔记,包括包装类,类型检测,错误与调试,变量和作用域,函数,面向对象,闭包,构造函数,原型和原型链,继承等知识点。
+<!-- more -->
 
 <!-- more -->
 
@@ -110,7 +111,7 @@ console.log(window.person)
 
 ```javascript
 with (person) {
-  name = 'xh'
+  name = "xh"
   相当于person.xxx
 }
 ```
@@ -187,14 +188,14 @@ console.log(a)
 
 ```javascript
 var cat = {
-  naem: 'tom',
+  naem: "tom",
   age: 4,
-  famliy: ['father', 'mather'],
+  famliy: ["father", "mather"],
   speak: function () {
-    consloge.log('喵喵~')
+    consloge.log("喵喵~")
   },
   friend: {
-    naem: 'Jerry',
+    naem: "Jerry",
     age: 4,
   },
 }
@@ -296,7 +297,7 @@ add();
 - 构造函数
 
 ```javascript
-new Function('num1', 'num2', 'return num1+num2;') //参数必须是字符串
+new Function("num1", "num2", "return num1+num2;") //参数必须是字符串
 add()
 ```
 
@@ -310,7 +311,7 @@ add()
 ```javascript
 //定义:
 var person = {
-  name: 'xm',
+  name: "xm",
   setSex: function (sex) {
     this.sex = sex
   },
@@ -490,7 +491,82 @@ c()
 用途： 1.读取函数内部的值； 2.让 i 变量的值保存在内存中；
 优缺点：
 
-- 有利于封装,可以访问局部变量;使用不当,没有及时回收会造成内存泄漏！！
+- 有利于封装,可以访问局部变量;使用不当,没有及时回收会造成内存泄漏
+
+### 构造函数：
+
+- 构造函数函数名的首字母最好大写，这是为了方便我们区分构造函数和其他非构造函数
+- 构造函数使用 this 关键字来给它将创建的这个对象设置新的属性。在构造函数里面，this 指向的就是它新创建的这个对象。
+- 构造函数定义了属性和行为就可创建对象，而不是像其他函数一样需要设置返回值。
+- 通过构造函数创建对象的时候要使用 new 操作符。
+
+### constructor 属性是对创建这个实例的构造函数的一个引用
+
+- 凡是手动给新对象重新设置过原型对象的，都别忘记在原型对象中定义一个 `function.prototype.constructor` 属性;
+- 原型是一个对象，所以原型对象也有它自己的原型,这样看来的话，Bird.prototype 的原型就是 Object.prototype;
+
+### Object 是 JavaScript 中所有对象的父级，也就是原型链的最顶层
+
+### Object.create(proto [ propertiesObject ])
+
+- 是 E5 中提出的一种新的对象创建方式，第一个参数是要继承的原型，如果不是一个子函数，可以传一个 null，第二个参数是对象的属性描述符，这个参数是可选的。
+- bject.create(obj)创建了一个新对象，并指定了 obj 作为新对象的原型。
+- let animal = Object.create(Animal.prototype);
+- 不相关对象的相同方法,可以定义一个函数内部继续函数调用一个方法,然后把对象传进去,对象引用方法便是;
+- 对于不相关的对象，更好的方法是使用 mixins。mixin 允许其他对象使用函数集合。
+
+```
+let flyMixin = function(obj) {
+  obj.fly = function() {
+    console.log("Flying, wooosh!");
+  }
+};
+```
+
+### A.prototype.isPrototypeOf(B)
+
+- 作用：检测一个`[A]`对象是否是另一个对象`[B]`的原型。或者说一个对象是否被包含在另一个对象的原型链中
+
+```
+var p = {x:1};//定义一个原型对象
+var o = Object.create(p);//使用这个原型创建一个对象
+p.isPrototypeOf(o);//=>true：o继承p
+Object.prototype.isPrototypeOf(p);//=> true p继承自Object.prototype
+```
+
+### hasOwnProperty
+
+- 对象的 hasOwnProperty()方法用来检测给定的名字是否是对象的自由属性(自己的属性 true)，如果是继承属性则返回 false
+
+```
+let ownProps = [];
+
+for (let property in duck) {
+  if(duck.hasOwnProperty(property)) {
+    ownProps.push(property);
+  }
+}
+
+console.log(ownProps); // prints [ "name", "numLegs" ]
+```
+
+- 使属性私有化最简单的方法就是在构造函数中创建变量。可以将该变量范围限定在构造函数中，而不是全局可用。这样，属性只能由构造函数中的方法访问和更改。
+- 在 JavaScript 中，函数总是可以访问创建它的上下文。这就叫做闭包.
+
+### 立即执行函数(IIFE)
+
+- 两种常见形式：( function(){…} )()和( function (){…}())，
+- 一个是一个匿名函数包裹在一个括号运算符中，后面再跟一个小括号
+- 另一个是一个匿名函数后面跟一个小括号，然后整个包裹在一个括号运算符中
+- 这两种写法是等价的,要想立即执行函数能做到立即执行
+- 要注意两点:一是函数体后面要有小括号()
+- 二是函数体必须是函数表达式而不能是函数声明
+- 可以用除了使用()运算符之外，！，+，-，=等运算符,将匿名函数或函数声明转换为函数表达式
+
+### 使用立即执行函数的好处
+
+- 通过定义一个匿名函数，创建了一个新的函数作用域，相当于创建了一个“私有”的命名空间，该命名空间的变量和方法，不会破坏污染全局的命名空间。此时若是想访问全局对象，将全局对象以参数形式传进去即可
+  如 jQuery 代码结构:
 
 ### 声明对象
 
@@ -537,15 +613,15 @@ function createObject(name, age) {
   obj.age = age
   obj.run = function () {
     //在obj对象中 调用obj对象的属性 this 代表的当前对象***
-    return this.name + '----' + this.age + '运行中....'
+    return this.name + "----" + this.age + "运行中...."
   }
   obj.say = function () {
-    return '今天天气不错'
+    return "今天天气不错"
   }
   return obj //!!!!重点返回obj对象
 }
-var box1 = createObject('张三', 18)
-var box2 = createObject('李四', 20)
+var box1 = createObject("张三", 18)
+var box2 = createObject("李四", 20)
 alert(box2.run())
 //box1 和 box2 没有关系
 ```
@@ -580,14 +656,14 @@ function blog(name, url, friend) {
 
 blog.prototype = {
   showIn: function () {
-    alert(this.name + '-----' + this.url)
+    alert(this.name + "-----" + this.url)
   },
   gets: function () {
     alert(this.friend)
   },
 }
 
-var pro = new blog('zs', 'baidu.com', 'lisi')
+var pro = new blog("zs", "baidu.com", "lisi")
 pro.showIn()
 ```
 
@@ -625,9 +701,9 @@ pro.showIn()
 
 ```javascript
 var o = {
-  name: 'Jack',
+  name: "Jack",
   age: 20,
-  city: 'Beijing',
+  city: "Beijing",
 }
 for (var key in o) {
   if (o.hasOwnProperty(key)) {
@@ -648,14 +724,14 @@ function Animal(name, food) {
   this.name = name
   this.food = food
   this.say = function () {
-    alert(this.name + '喜欢吃' + this.food)
+    alert(this.name + "喜欢吃" + this.food)
   }
 }
 function Dog(name, food) {
   Animal.call(this, name, food)
 }
 
-var dog1 = new Dog('dog', '骨头')
+var dog1 = new Dog("dog", "骨头")
 dog1.say() //dog 喜欢吃 骨头
 ```
 
@@ -680,13 +756,13 @@ add.apply(subs, [5, 3])
 
 ```javascript
 function animal() {
-  this.name = 'ani'
+  this.name = "ani"
   this.showName = function () {
     alert(this.name)
   }
 }
 function cat() {
-  this.name = 'cat'
+  this.name = "cat"
 }
 var an = new animal()
 var c = new cat()
@@ -717,17 +793,9 @@ var sun = function () {
 
 1. 在普通函数中，通过 this 定义的变量是全局变量
 2. this 在构造函数表示当前对象
-3. `call apply `中 this 指第一个参数
+3. `call apply`中 this 指第一个参数
 
 ### 对象冒充
 
 - 将父类的属性和方法一起传给子类,作为特权属性和特权方法;
 - 不能继承共有属性和方法
-
-## DOM 操作
-
-- 参考 JavaScript!
-
-## DOM 事件
-
-- 参考 JavaScript!

@@ -1,8 +1,14 @@
 ---
 home: true
 heroImage: /logo.jpg
-actionText: 进入博客 🤩
-actionLink: /main/
 
-footer: 真正的大师, 永远有一颗学徒的心
+actions:
+  - text: 进入博客
+    link: /JavaScript/JavaScript基础.md
+    type: primary
+# features:
+#   - title: 无
+#     details: 无
+
+# footer: MIT Licensed | Copyright © 2018-present
 ---

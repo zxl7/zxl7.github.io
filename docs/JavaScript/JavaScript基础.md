@@ -4,7 +4,7 @@ date: 2019-12-26 19:58:22
 tags: JavaScript
 categories: [学习笔记,JavaScript]
 ---
-JavaScript天下无敌!
+JavaScript 走天下，前端开发者必备技能，本文主要介绍JavaScript的基础知识，包括数据类型、变量、函数、对象、数组、操作符、循环、Map和Set等知识点。
 <!-- more-->
 
 
