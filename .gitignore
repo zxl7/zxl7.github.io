@@ -3,3 +3,8 @@ node_modules
 docs/.vuepress/dist
 
 docs/.vuepress/.temp
+
+node_modules/
+blog/.vuepress/.cache/
+blog/.vuepress/.temp/
+blog/.vuepress/dist/
