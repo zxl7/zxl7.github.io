@@ -5,11 +5,6 @@
     "clean-dev": "vuepress-vite dev blog --clean-cache",
     "dev": "vuepress-vite dev blog",
     "update-package": "npx vp-update"
-    "d": "bash deploy.sh",
-    "build": "vuepress-vite build blog",
-    "clean-dev": "vuepress-vite dev blog --clean-cache",
-    "dev": "vuepress-vite dev blog",
-    "update-package": "npx vp-update"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.14",
