@@ -4,11 +4,6 @@
     "moduleResolution": "NodeNext",
     "target": "ES2022"
   },
-  "include": [
-    "blog/.vuepress/**/*.ts",
-    "blog/.vuepress/**/*.vue"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["blog/.vuepress/**/*.ts", "blog/.vuepress/**/*.vue"],
+  "exclude": ["node_modules"]
 }
