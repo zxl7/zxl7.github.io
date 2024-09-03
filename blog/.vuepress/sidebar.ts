@@ -24,6 +24,13 @@ export default sidebar({
       link: "框架和库/",
       children: "structure",
     },
+    {
+      text: "工程化和部署",
+      icon: "book",
+      prefix: "工程化和部署/",
+      link: "工程化和部署/",
+      children: "structure",
+    },
     // 'course',
   ],
 })

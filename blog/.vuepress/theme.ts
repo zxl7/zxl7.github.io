@@ -21,7 +21,7 @@ export default hopeTheme({
   // 侧边栏
   sidebar,
   // 页脚
-  footer: "默认页脚",
+  // footer: "默认页脚",
   displayFooter: true,
 
   // 博客相关
