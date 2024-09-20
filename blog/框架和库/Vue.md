@@ -7,9 +7,7 @@ categories: [源码]
 
 # Vue 源码解读
 
-## 深入响应式
-
-Vue2
+## Vue2 深入响应式
 
 ```js
 // 模拟 Vue 中的 data 选项
@@ -21,7 +19,7 @@ let data = {
 let vm = {}
 proxyData(data)
 function proxyData(data) {
-  // 遍历 data 对象的所有属性
+  // 遍历 data 对象的所有属性,每个属性通过defineProperty转换成getter/setter,所以性能较差
   Object.keys(data).forEach((key) => {
     // 把 data 中的属性，转换成 vm 的 setter/setter
     Object.defineProperty(vm, key, {
@@ -49,7 +47,7 @@ vm.msg = "Hello World"
 console.log(vm.msg)
 ```
 
-Vue3
+## Vue3
 
 ```JS
 // 模拟 Vue 中的 data 选项
